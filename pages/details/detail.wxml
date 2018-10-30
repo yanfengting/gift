@@ -1,0 +1,20 @@
+<!--pages/details/detail.wxml-->
+
+<view>
+     <image src="{{gift.src}}"></image>
+</view>
+<view>
+     <text class="title">{{gift.title}}</text>
+</view>
+<view class="box">
+     <text class="price">{{gift.price}}</text>
+     <text class="count">库存：{{gift.count}}个</text>
+</view>
+<view class="border"></view>
+<view class='intro'>
+     <text>产品的详细介绍</text>
+</view>
+<view>
+     <text>{{gift.info}}</text>
+</view>
+

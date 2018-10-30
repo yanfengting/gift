@@ -1,0 +1,40 @@
+<!--index.wxml-->
+
+<view class="page">
+  <swiper autoplay="true" indicator-dots="true">
+    <swiper-item wx:for="{{pictures}}" wx:key="index">
+      <image class="img" src="{{item.src}}"></image>
+      <text class="title">{{item.title}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="gift">
+  <view class="title">
+    <text> 纪念品列表</text>
+  </view>
+
+  <block wx:for="{{gifts}}" wx:key="index">
+    <view class="layout">
+      <view class="left">
+        <image src="{{item.src}}"></image>
+      </view>
+      <view class="right">
+        <text class="title1">{{item.title}}</text>
+        <view>
+          <text class="price">{{item.price}}</text>
+        </view>
+        <view>
+          <text class="count">库存：{{item.count}}个</text>
+        </view>
+
+        <view class="btn">
+          <navigator url="../details/detail?id={{item._id}}" hover-class="none">详情</navigator>
+          <!-- <button bindtap="showInfo" hover-class="none">详情</button> -->
+          <button bindtap="showModal">咨询</button>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="loading"> 没有更多数据啦~</view>
+</view>

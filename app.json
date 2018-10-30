@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/about/about",
+    "pages/details/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#008DFF",
+    "navigationBarTitleText": "中北定制纪念品",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#0089dc",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabs/home.png",
+        "selectedIconPath": "images/tabs/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/tabs/about.png",
+        "selectedIconPath": "images/tabs/about-selected.png",
+        "text": "关于"
+      }
+    ]
+  }
+  
+}
